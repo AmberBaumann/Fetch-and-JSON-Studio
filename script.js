@@ -27,3 +27,4 @@ function whenLoaded() {
 };
 
 window.onload = whenLoaded();
+    console.log("Hello World");
