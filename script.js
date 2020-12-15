@@ -1,6 +1,6 @@
 function whenLoaded() {
     fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function (response) {
-        return response.json;
+        return response.json();
     }).then(function (json) {
 
         const container = document.querySelector('#container');
@@ -18,7 +18,7 @@ function whenLoaded() {
                         <li>Skills: ${astronaut.skills.join(", ")}</li>
                     </ul>
                 </div>
-                <img class="avatar" src="images/${astronaut.picture}"/>
+                <img class="avatar" src=${astronaut.picture}"/>
             </div>
             `;
         }
@@ -26,5 +26,4 @@ function whenLoaded() {
     });
 };
 
-window.onload = whenLoaded();
-    console.log("Hello World");
+window.onload = whenLoaded;
