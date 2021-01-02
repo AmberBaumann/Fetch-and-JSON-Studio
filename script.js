@@ -18,7 +18,7 @@ function whenLoaded() {
                         <li>Skills: ${astronaut.skills.join(", ")}</li>
                     </ul>
                 </div>
-                <img class="avatar" src=${astronaut.picture}"/>
+                <img class="avatar" src="${astronaut.picture}"/>
             </div>
             `;
         }
